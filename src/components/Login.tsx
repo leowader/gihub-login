@@ -1,6 +1,9 @@
 import git from "../assets/git.svg";
 import { Button } from "./ui/button";
 const Login = () => {
+  const handleButtonClick = () => {
+    window.open('/info', '_blank'); // Abre la ruta /info en una nueva pestaña
+  };
   return (
     <div className="w-full flex-col bg-[#0D1117] h-screen flex items-center justify-center">
       <div className="flex flex-col justify-center item-center gap-4 text-[13px] w-72">
@@ -23,7 +26,7 @@ const Login = () => {
             type="text"
             className="bg-[#0D1117] border border-white p-1.5 rounded-lg border-opacity-10"
           />
-          <Button className="bg-[#29903B] font-bold p-1.5 rounded-lg">
+          <Button className="bg-[#29903B] font-bold p-1.5 rounded-lg" onClick={handleButtonClick} >
             Sign in
           </Button>
         </div>
