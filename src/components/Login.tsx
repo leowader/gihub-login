@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom";
 import git from "../assets/git.svg";
 import { Button } from "./ui/button";
 const Login = () => {
-  const handleButtonClick = () => {
-    window.open('https://github-login-khaki.vercel.app/info', '_blank'); // Abre la ruta /info en una nueva pestaña
-  };
+  const handleButtonClick = () => {};
   return (
     <div className="w-full flex-col bg-[#0D1117] h-screen flex items-center justify-center">
       <div className="flex flex-col justify-center item-center gap-4 text-[13px] w-72">
@@ -26,9 +25,14 @@ const Login = () => {
             type="password"
             className="bg-[#0D1117] border border-white p-1.5 rounded-lg border-opacity-10"
           />
-          <Button className="bg-[#29903B] font-bold p-1.5 rounded-lg" onClick={handleButtonClick} >
-            Sign in
-          </Button>
+          <Link to={"/info"} className="">
+            <Button
+              className="bg-[#29903B] w-full font-bold p-1.5 rounded-lg hover:bg-[#29903B]"
+              onClick={handleButtonClick}
+            >
+              Sign in
+            </Button>
+          </Link>
         </div>
         <div className="border border-white border-opacity-10 flex flex-col p-5 gap-1 rounded-lg items-center justify-center">
           <span className="text-[#4493F8]">Sign in with a passkey</span>
@@ -38,15 +42,14 @@ const Login = () => {
             <span className="text-[#4493F8]">Create an account</span>
           </span>
         </div>
-        
       </div>
       <div className="flex gap-4 mt-10 opacity-60 text-[12px]">
-          <span>Privacy</span>
-          <span>Docs</span>
-          <span>Contact GitHub Support</span>
-          <span>Manage cookies</span>
-          <span>Do not share my personal information</span>
-        </div>
+        <span>Privacy</span>
+        <span>Docs</span>
+        <span>Contact GitHub Support</span>
+        <span>Manage cookies</span>
+        <span>Do not share my personal information</span>
+      </div>
     </div>
   );
 };
