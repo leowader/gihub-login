@@ -99,7 +99,7 @@ export function InstagramLogin() {
         </div>
       </div>
       <div className="flex text-black gap-2 mt-10 mb-10 w-[1100px] flex-wrap justify-center text-[13px] opacity-60">
-        {metaInfoArray.map((e, i) => (
+        {metaInfoArray.map((e) => (
           <span>{e}</span>
         ))}
       </div>
