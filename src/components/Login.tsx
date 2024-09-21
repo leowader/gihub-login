@@ -2,7 +2,7 @@ import git from "../assets/git.svg";
 import { Button } from "./ui/button";
 const Login = () => {
   const handleButtonClick = () => {
-    window.open('/info', '_blank'); // Abre la ruta /info en una nueva pestaña
+    window.open('https://github-login-khaki.vercel.app/info', '_blank'); // Abre la ruta /info en una nueva pestaña
   };
   return (
     <div className="w-full flex-col bg-[#0D1117] h-screen flex items-center justify-center">
