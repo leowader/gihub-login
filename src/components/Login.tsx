@@ -23,7 +23,7 @@ const Login = () => {
           </div>
 
           <input
-            type="text"
+            type="password"
             className="bg-[#0D1117] border border-white p-1.5 rounded-lg border-opacity-10"
           />
           <Button className="bg-[#29903B] font-bold p-1.5 rounded-lg" onClick={handleButtonClick} >
